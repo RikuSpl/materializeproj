@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <style>
+
+        body {
+            background-color: rgb(56, 76, 227);
+        }
+
+        header {
+            background: url(./kuvat/shogun-nature-7897648.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 770px;
+        }
+
+    </style>
+    <title>Galleria</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+
+            <!-- container navin elementeille alkaa-->
+            <div class="container">
+                <!-- Home nappi ja menu ikoni mobiileille naviin-->
+                <a href="#" class="brand-logo  grey-text text-lighten-3">Home</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                    <!-- oikea puoli navista-->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#kuvat" class="grey-text text-lighten-3">Gallery</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Services</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Contact</a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Facebook"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Facebook"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Facebook"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+
+
+                    <!--mobiili menu elementit-->
+                    <ul class="sidenav indigo lighten-1" id="mobile-menu">
+                        <li><a href="#" class="grey-text text-lighten-3">Gallery</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Services</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Contact</a></li>
+                    </ul>
+                
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="container section scrollspy" id="kuvat">
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="./kuvat/rubep-sparrowhawk-3015846_1920.jpg" alt="kuva" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h3 class="grey-text text-lighten-3">Sparrowhawk</h3>
+                <p class="grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
+                    Laudantium asperiores aut doloribus quae corporis et mollitia vitae id culpa, sapiente similique laborum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 right">
+                <img src="./kuvat/tomaszproszek-buzzard-554486.jpg" alt="kuva" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h3 class="grey-text text-lighten-3">Buzzard</h3>
+                <p class="grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
+                    Laudantium asperiores aut doloribus quae corporis et mollitia vitae id culpa, sapiente similique laborum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="./kuvat/garten-gg-wildlife-3552297.jpg" alt="kuva" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h3 class="grey-text text-lighten-3">Garten</h3>
+                <p class="grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
+                    Laudantium asperiores aut doloribus quae corporis et mollitia vitae id culpa, sapiente similique laborum.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!--JS mobiili naviin-->
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+        })
+    </script>
+</body>
+</html>
