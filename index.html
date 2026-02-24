@@ -12,7 +12,7 @@
     <style>
 
         body {
-            background-color: rgb(56, 76, 227);
+            background-color: #002451;
         }
 
         header {
@@ -20,6 +20,12 @@
             background-size: cover;
             background-position: center;
             min-height: 770px;
+        }
+        .tab {
+            background-color: #002451;
+        }
+        .flow-text {
+            font-size: 1.1rem;
         }
 
     </style>
@@ -40,8 +46,8 @@
                     <!-- oikea puoli navista-->
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#kuvat" class="grey-text text-lighten-3">Gallery</a></li>
-                        <li><a href="#" class="grey-text text-lighten-3">Services</a></li>
-                        <li><a href="#" class="grey-text text-lighten-3">Contact</a></li>
+                        <li><a href="#services" class="grey-text text-lighten-3">Services</a></li>
+                        <li><a href="#contact" class="grey-text text-lighten-3">Contact</a></li>
                         <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Facebook"><i class="fab fa-github"></i></a></li>
                         <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Facebook"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="Facebook"><i class="fab fa-instagram"></i></a></li>
@@ -60,6 +66,8 @@
         </nav>
     </header>
 
+    
+
     <section class="container section scrollspy" id="kuvat">
 
         <div class="row">
@@ -68,7 +76,7 @@
             </div>
             <div class="col s12 l6">
                 <h3 class="grey-text text-lighten-3">Sparrowhawk</h3>
-                <p class="grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
+                <p class="flow-text grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
                     Laudantium asperiores aut doloribus quae corporis et mollitia vitae id culpa, sapiente similique laborum.</p>
             </div>
         </div>
@@ -78,24 +86,106 @@
             </div>
             <div class="col s12 l6">
                 <h3 class="grey-text text-lighten-3">Buzzard</h3>
-                <p class="grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
+                <p class="flow-text grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
                     Laudantium asperiores aut doloribus quae corporis et mollitia vitae id culpa, sapiente similique laborum.</p>
             </div>
         </div>
+        
         <div class="row">
             <div class="col s12 l4">
                 <img src="./kuvat/garten-gg-wildlife-3552297.jpg" alt="kuva" class="responsive-img materialboxed">
             </div>
             <div class="col s12 l6">
                 <h3 class="grey-text text-lighten-3">Garten</h3>
-                <p class="grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
+                <p class="flow-text grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi nostrum, architecto id natus sapiente cumque. 
                     Laudantium asperiores aut doloribus quae corporis et mollitia vitae id culpa, sapiente similique laborum.</p>
             </div>
         </div>
 
     </section>
 
+    <!-- parallax alkaa -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./kuvat/beba123-bridge-7863619_1920.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+    <!--Parallax loppuu-->
 
+    <!--Palvelut ja tabs alkaa-->
+
+    <section class="container section scrollspy" id="services">
+
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="blue-text text-lighten-5">Our services</h2>
+                <p class="flow-text blue-text text-lighten-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus debitis autem quos exercitationem similique, esse, sed corrupti optio expedita, non consectetur amet. Consectetur, nemo?</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="blue-text text-lighten-5">Photography</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="blue-text text-lighten-5">Editing</a>
+                    </li>
+                </ul>
+
+                <div class="col s12" id="photography">
+                    <h5 class="blue-text text-lighten-5">Photography</h5>
+                    <p class="flow-text blue-text text-lighten-5">
+                        Photography is the art, application, and practice of creating images by recording light, either electronically by means of an 
+                        image sensor, or chemically by means of a light-sensitive material such as photographic film. 
+                        It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, 
+                        film and video production, recreational purposes, hobby, and mass communication.[1] 
+                    </p>
+                </div>
+
+                <div class="col s12" id="editing">
+                    <h5 class="blue-text text-lighten-5">Editing</h5>
+                    <p class="flow-text blue-text text-lighten-5">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis alias error blanditiis quo libero iste temporibus incidunt ullam ipsam minus ab tenetur, odio quasi,
+                         commodi et nobis pariatur excepturi voluptas quae consequuntur exercitationem. Tenetur fugit nulla voluptate perspiciatis dolore excepturi nisi exercitationem maxime, 
+                         obcaecati natus consequatur fuga, sint quo quod earum, adipisci suscipit nihil. Veritatis.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+      <!--Palvelut ja tabs loppuu-->
+
+
+
+        <!-- parallax alkaa -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./kuvat/shogun-nature-7897648.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+    <!--Parallax loppuu-->
+
+
+    <!-- contact form alkaa -->
+
+    <section class="section container scrollspy" id="contact">
+
+        <div class="row">
+            <div class="col s12 l6">
+                <h2 class="blue-text text-lighten-5">Contact us</h2>
+                <p class="flow-text blue-text text-lighten-5">Phone nr: 123 123 123</p>
+                <p class="flow-text blue-text text-lighten-5">Email: example@example.com</p>
+                <p class="flow-text blue-text text-lighten-5">Adress: Fake street 2</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Contact form loppuu-->
+
+  
 
 
     <!-- Compiled and minified JavaScript -->
@@ -106,6 +196,8 @@
         $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
         })
     </script>
 </body>
