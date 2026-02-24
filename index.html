@@ -173,17 +173,83 @@
     <section class="section container scrollspy" id="contact">
 
         <div class="row">
-            <div class="col s12 l6">
+            <div class="col s12 l4">
                 <h2 class="blue-text text-lighten-5">Contact us</h2>
                 <p class="flow-text blue-text text-lighten-5">Phone nr: 123 123 123</p>
                 <p class="flow-text blue-text text-lighten-5">Email: example@example.com</p>
                 <p class="flow-text blue-text text-lighten-5">Adress: Fake street 2</p>
             </div>
+
+            <div class="col s12 l6 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix blue-text text-lighten-5">email</i>
+                        <input type="email" id="email" class="blue-text text-lighten-5">
+                        <label for="email">Email us</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix blue-text text-lighten-5">message</i>
+                        <textarea id="text" class="materialize-textarea blue-text text-lighten-5"></textarea>
+                        <label for="text">Send us a text</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix blue-text text-lighten-5">perm_contact_calendar</i>
+                        <input type="text" id="date" class="datepicker blue-text text-lighten-5">
+                        <label for="date">Reserve a meeting</label>
+                    </div>
+                    <div class="input-field">
+                        <p class="blue-text text-lighten-5">Pick service</p>
+                        <p>
+                            <label>
+                                <div class="col s4">
+                                    <input type="checkbox">
+                                    <span class="blue-text text-lighten-5">Photography</span>
+                                </div>
+                                <div class="col s4">
+                                    <input type="checkbox">
+                                    <span class="blue-text text-lighten-5">Editing</span>
+                                </div>
+                                
+                            </label>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+
         </div>
 
     </section>
 
     <!--Contact form loppuu-->
+
+    <footer class="page-footer grey darken-4">
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <h5>Information</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col s12 l6 offset-l2">
+                    <h5>Our socials</h5>
+                    <ul>
+                        <li><a href="" class="blue-text text-lighten-5">Linkedin</a></li>
+                        <li><a href="" class="blue-text text-lighten-5">Facebook</a></li>
+                        <li><a href="" class="blue-text text-lighten-5">Instagram</a></li>
+                        <li><a href="" class="blue-text text-lighten-5">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright blue-text text-lighten-5">
+            <div class="container center-align">&copy; 2026 all rights reserved</div>
+        </div>
+
+    </footer>
 
   
 
@@ -198,6 +264,7 @@
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
             $('.tabs').tabs();
+            $('.datepicker').datepicker({disableWeekends: true});
         })
     </script>
 </body>
